@@ -35,7 +35,7 @@ public class ModificacaoCadastroController {
 		{
 			cad = (Cliente) l.get(i);
 			conteudo = cad.getCpf() + ";" + cad.getNome() + ";" + cad.getIdade() + ";" + cad.getLimitCredit();
-//			conteudo = l.get(i);
+			conteudo = l.get(i);
 			escreveArq.write(conteudo);
 			escreveArq.flush();
 			
