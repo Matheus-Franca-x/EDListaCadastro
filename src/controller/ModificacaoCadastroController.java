@@ -84,10 +84,13 @@ public class ModificacaoCadastroController {
 					Integer.parseInt(vet[2]) <= idadeMax && //desejado que estao no parametro
 					Double.parseDouble(vet[3]) > limiteCredit)
 				{
-					Cliente cad = new Cliente(vet[0], //criacao de um novo cliente com os parametro
-											  vet[1], //desejado, entrando como um Object na lista
-											  Integer.parseInt(vet[2]), 
-											  Double.parseDouble(vet[3]));
+					//criacao de um novo cliente com os parametro
+					//desejado, entrando como um Object na lista
+					
+					Cliente cad = new Cliente(	vet[0], 
+							vet[1], 
+							Integer.parseInt(vet[2]), 
+							Double.parseDouble(vet[3]));
 					
 					if (listaCad.isEmpty()) //add na primeira
 					{
