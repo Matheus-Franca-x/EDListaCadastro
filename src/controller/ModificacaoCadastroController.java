@@ -109,7 +109,7 @@ public class ModificacaoCadastroController {
 			lerFlux.close();
 			abreFlux.close();
 			
-			novoArquivo(listaCad, "Idade-" +  //tripo de arquivo que sera criado na hora de gerar
+			novoArquivo(listaCad, "Idade-" +  //tipo de arquivo que sera criado na hora de gerar
 						idadeMin + "-A-" + 	  //uma nova lista
 						idadeMax + "-Limite-" + 
 						limiteCredit + ".csv");
