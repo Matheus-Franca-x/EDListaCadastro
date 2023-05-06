@@ -1,5 +1,7 @@
 package model;
 
+import javax.swing.JOptionPane;
+
 public class Cliente 
 {
 	private String cpf = "";
@@ -15,25 +17,23 @@ public class Cliente
 		
 		String str = cpf;
 		str = str.replaceAll("[^0-9]", "");
-		
-		System.out.println(str);
 				
-			if(str.length() == 11)
-			{
-				System.out.println("E um cpf");
-					
-				String formataCpf = 
-						str.substring(0, 3) + "." +
-						str.substring(3, 6) + "." +
-						str.substring(6, 9) + "-" +
-						str.substring(9, 11);
-				str = formataCpf;
-				this.cpf = str;
-			}
-			else
-			{
-				System.out.println("CPF Invalido");			
-			}
+		if(str.length() == 11)
+		{
+			
+				
+			String formataCpf = 
+					str.substring(0, 3) + "." +
+					str.substring(3, 6) + "." +
+					str.substring(6, 9) + "-" +
+					str.substring(9, 11);
+			str = formataCpf;
+			this.cpf = str;
+		}
+		else
+		{
+			JOptionPane.showMessageDialog(null, "CPF Invalido!");
+		}
 	}
 
 	public String getCpf() {
