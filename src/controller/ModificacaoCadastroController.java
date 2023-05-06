@@ -87,7 +87,7 @@ public class ModificacaoCadastroController {
 					//criacao de um novo cliente com os parametro
 					//desejado, entrando como um Object na lista
 					
-					Cliente cad = new Cliente(	vet[0], 
+					Cliente cad = new Cliente(vet[0], 
 							vet[1], 
 							Integer.parseInt(vet[2]), 
 							Double.parseDouble(vet[3]));
