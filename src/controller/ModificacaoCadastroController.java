@@ -122,10 +122,10 @@ public class ModificacaoCadastroController {
 		
 	}
 	
-	public void cadastroPadrao() //Nao e tao necessario, mas para teste e interessante ter
-	{							 //um cadastro padrao, no caso a que esta no pdf
+	public void cadastroPadrao()                         //Nao e tao necessario, mas para teste e interessante ter
+	{                                                    //um cadastro padrao, no caso a que esta no pdf
 		File arq = new File("C:\\TEMP", "Cadastro.csv"); //verificacao para saber se o arquivo existe,
-														 //caso existe, ele nao criara.
+                                                         //caso existe, ele nao criara.
 		if (!arq.exists() && !arq.isFile())
 		{
 			ListaObject padrao = new ListaObject();
